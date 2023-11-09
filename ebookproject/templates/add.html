@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<form style="text-align:center;font-size:150%;padding:100px;background-color:DarkSlateGray" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter book name"><br><br>
+    <input type="text" name="author" placeholder="Enter author name"><br><br>
+    <input type="text" name="desc" placeholder="Enter book description"><br><br>
+    <input type="number" name="year" placeholder="Enter book year"><br><br>
+    <input type="text" name="price" placeholder="Enter book price"><br><br>
+    <input type="file" name="img"><br><br>
+    <input style="background:#3630a3;color:white;" type="submit" value="ADD">
+
+</form>
+{% endblock %}
